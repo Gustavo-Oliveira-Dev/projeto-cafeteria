@@ -103,22 +103,22 @@ header section nav a:hover {
     line-height: 1.8;
 }
 
-.Pegue {
+.pegue {
     background-color: var(--main-color);
     display: inline-block;
     cursor: pointer;
     margin-top: 2rem;
     font-size: 1.8rem;
-    color: #fff;
+    color: #ffff;
     padding: 1rem 3rem;
     text-decoration: none;
-   
     border: none;
     transition: 0.3s linear;
     border-radius: 3px;
 }
 .Pegue:hover {
     letter-spacing: 0.1rem;
+   
 }
 
 .titulo {
@@ -196,6 +196,37 @@ transition: left 1s linear;
 
 .menu {
     color: blue;
+}
+
+/*Página menu*/
+
+header {
+    background-color: var(--bg);
+    position: fixed;
+}
+
+.logo-menu {
+display: flex;
+justify-content:center ;
+}
+
+.menu-h1 {
+    color: #ffff;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 100px;
+    font-weight: 500;
+}
+
+
+.h2 {
+    margin-top: 220px;
+  background-color: #e9ae76;
+}
+
+h3 {
+      font-size: 36px;
+    color: #ffff;
 }
 
 
