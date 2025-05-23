@@ -207,7 +207,7 @@ transition: left 1s linear;
     
 }
 
-   .fundo-menu{
+.fundo-menu{
     min-height: 100%;
     min-width: 100%;
     position: fixed;
@@ -218,8 +218,9 @@ transition: left 1s linear;
 }
 
 .img-fundo{
-    height: 440px;
-    width: 370px;
+    height: 564px;
+    width: 560px;
+    margin-top: 90px;
 }
 
 .cafe-menu {
@@ -230,7 +231,7 @@ transition: left 1s linear;
 .img-coffe{
     
     margin-left: 50px;
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 
@@ -258,8 +259,10 @@ ul {
 
 .descricao{
     font-size: 20px;
+  
     color: #ffffff;
     margin-left: 0px;
+    
 }
 
 .preco{
@@ -284,23 +287,18 @@ ul {
     top: 0;
 }
 
-
-
 .txt{
     min-height: 100vh;
     display: flex;
     align-items: center;
 }
 
-
-
 .txt p{
-    font-size: 2rem;
-    color: #ffff;
+    font-size: 3.4rem;
+    color: #ffffff;
     font-weight: 600;
     padding: 1rem 0;
     line-height: 1.8;
-
 }
 
 
