@@ -1,103 +1,509 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles-menu.css">
     <title>Menu</title>
 </head>
+
 <body>
- <header>
-   <section>
-    <a href="index.html">
-        <img src="./img/logo.png" alt="">
-    </a>
-
-    
-<nav class="header-nav">
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="#" onclick="mostrarmodal()">Endereço</a>
-    <a href="sobre.html">Sobre</a>
-    <a href="#">Contato</a>
-</nav>
-
-     </section>
- </header>
-<div class="fundo-menu">
-    <img class="img-fundo" src="./img/Coffee-PNG-Image-Background.png" alt="">
-</div>
-<div class="container">
- <section>
- 
-    <nav class="imagens-nav">
-        <h1 class="cafes"><strong>Cafés</strong></h1>
-        <ul>
-    <li class="img-coffe"><img src="./img/menu-1.png" alt="1"></li>
-   
-        <br>
-    <h4 class="cafe-menu">Café Expresso</h4>
-        <br>
-         <p class="descricao">Café Expresso Forte/Extra Forte</p>
-        <br>
-        <p class="preco"> R$ 10,00</p>
-
-    <li class="img-coffe"><img src="./img/menu-2.png" alt="2"></li>
-        <br>
-    <h4 class="cafe-menu">Café com Creme</h4>
-        <br>
-        <p class="descricao">Café Expresso Com Creme</p>
-        <br>
-        <p class="preco">R$ 13,00</p>
-    <li class="img-coffe"><img src="./img/menu-3.png" alt="3"></li>
-        <br>
-    <h4 class="cafe-menu">Capuccino</h4>
-        <br>
-        <p class="descricao">Capuccino Tradicional</p>
-        <br>
-        <p class="preco">R$ 13,00</p>
-    <li class="img-coffe"><img src="./img/menu-4.png" alt="4"></li>
-        <br>
-    <h4 class="cafe-menu">Café Saborizado</h4>
-        <br>
-        <p class="descricao">Café Expresso Forte/Extra Forte <br> com Canela</p>
-        <br>
-        <p class="preco">R$ 12,00</p>
-    <li class="img-coffe"><img src="./img/menu-5.png" alt="5"> </li>
-        <br>
-    <h4 class="cafe-menu">Café com Leite e Chocolate</h4>
-        <br>
-        <p class="descricao">Café Expresso Com Leite <br> e Chocolate em Pó</p>
-        <br>
-        <p class="preco">R$ 15,00</p>
-    <li class="img-coffe"><img src="./img/menu-6.png" alt="6"></li>
-        <br>
-    <h4 class="cafe-menu">Café com Leite</h4>
-        <br>
-        <p class="descricao">Café Expresso Com Leite. </p>
-        <br>
-        <p class="preco">R$ 12,00</p>
-    </ul>
-    </nav>
-</section>
+    <header>
+        <section>
+            <a href="index.html">
+                <img src="./img/logo.png" alt="">
+            </a>
 
 
- </div>
+            <nav class="header-nav">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="#" onclick="mostrarmodal()">Endereço</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </nav>
 
-    
-<div class="modal">
-                    <h3 class="titulo"><span>Nosso</span>Endereço</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.339116166672!2d-49.60607971477147!3d-21.80582462455454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be467589002709%3A0x54c03e662abc324e!2sCafel%C3%A2ndia%2C%20SP%2C%2016500-000!5e0!3m2!1spt-BR!2sbr!4v1746584818097!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
+        </section>
+    </header>
+
+
+    <main>
+
+        <img id="topo" class="xicara" src="./img/menu-1.png" alt="xicara-de-cafe">
+        <img id="topo" class="xicara" src="./img/menu-2.png" alt="xicara-de-cafe">
+        <img id="topo" class="xicara" src="./img/menu-4.png" alt="xicara-de-cafe">
+        <img id="topo" class="xicara" src="./img/menu-5.png" alt="xicara-de-cafe">
+
+
+
+        <section>
+            <h1 id="cafes">Menu</h1>
+            <br>
+
+
+            <h3>Cafés, Doces e Salgados</h3>
+
+
+            <hr>
+            <br>
+            <div class="geral">
+                <h2>Cafés</h2>
+                <br>
+                <div class="container-cafes">
+                    <div class="cafes">
+                        <ul class="lista-cafes">
+                            <br>
+                            <li>
+                                <h4>Espresso</h4>
+                            </li>
+                            <li>
+                                <p>Café Expresso.
+                            </li>
+                            <br>
+                            <li>
+                                <h4>Espresso com Leite</h4>
+                            </li>
+                            <li>
+                                <p>Café Expresso com<br> Leite Integral / Desnatado</p>
+                            </li>
+                            <br>
+                            <li>
+                                <h4>Espresso com Creme</h4>
+                            </li>
+                            <li>
+                                <p>Café Expresso com <br>Creme de Baunilha / Chocolate</p>
+                            </li>
+                            <br>
+                            <li>
+                                <h4>Espresso Descafeinado</h4>
+                            </li>
+                            <li>
+                                <p>Expresso Descafeinado</p>
+                            </li>
+                            <br>
+                            <br>
+                            <li>
+                                <h4>Capucchino</h4>
+                                <br>
+                            </li>
+
+                            <li>
+                                <h4>Saborizado</h4>
+                            </li>
+                            <li>
+                                <p> Baunilha / Chocolate</p>
+                            </li>
+                            <br>
+
+                            <hr>
+                    </div>
+
+
+
+
+                    <div class="precos-cafes">
+
+                        <li>
+                            <br>
+                            <h4>R$ 8,00</h4>
+                        </li>
+                        <br>
+                        <br>
+                        <br>
+
+                        <li>
+                            <h4>R$ 10,00</h4>
+                        </li>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <li>
+                            <h4>R$ 12,00</h4>
+                        </li>
+                        <br>
+                        <br>
+                        <li>
+                            <br>
+                            <br>
+
+                            <h4>R$ 10,00</h4>
+                        </li>
+                        <br>
+                        <br>
+                        <li>
+                            <br>
+                            <br>
+
+                            <h4>R$ 12,00</h4>
+                        </li>
+                        <li>
+                            <br>
+
+                            <br>
+                            <h4>R$ 14,00</h4>
+                        </li>
+
+                        <br>
+                    </div>
+
                 </div>
-                <div class="mascara-modal" onclick="escondermodal()"></div>
+                </ul>
 
-            </div> 
-        
 
-<script src="./scipts.js">
+                <h2 id="doces">Doces</h2>
+                <br>
 
-</script>
-    
+                <div class="container-doces">
+                    <div class="doces">
+
+
+                        <ul class="lista-doces">
+                            <li>
+                                <br>
+                                <h4>Pudim de Leite</h4>
+                            </li>
+
+                            <li>
+                                <p>Pudim de leite com <br>
+                                    Calda de Caramelo</p>
+                            </li>
+
+                            <br>
+                            <li>
+                                <h4>Bolo de Chocolate</h4>
+                            </li>
+                            <li>
+                                <p>Cobertura<br>
+                                    de Chocolate</p>
+                            </li>
+                            <br>
+                            <li>
+                                <h4>Bolo Recheado</h4>
+                            </li>
+                            <li>
+                                <p>Bolo com Recheio de<br>
+                                    Chocolate / Doce de Leite</p>
+                            </li>
+                            <br>
+                            <li>
+                                <h4>Torta de Côco</h4>
+                            </li>
+                            <li>
+                                <p>Torta de Côco Recheada<br>
+                                    com Leite Condensado</p>
+                            </li>
+                            <br>
+                            <li>
+                                <h4>Bolo da Moça Especial</h4>
+                            </li>
+                            <li>
+                                <p>Tradicional Bolo da Moça<br>
+                                    com Leite Condensado </p>
+                            </li>
+                            <br>
+                            <li>
+                                <h4>Bolo Comum / Sabores</h4>
+                            </li>
+                            <li>
+                                <p>Laranja / Ovos / Formigueiro<br>
+                                    Nata / Limão</p>
+                            </li>
+                            <hr>
+                    </div>
+
+                    <div class="preco-doces">
+                        <br>
+                        <li>
+                            <h4>R$ 8,00</h4>
+                        </li>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <li>
+                            <h4>R$ 6,00</h4>
+                        </li>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <li>
+                            <h4>R$ 7,00</h4>
+                        </li>
+                        <br>
+                        <br>
+                        <br>
+                        <li>
+                            <h4>R$ 9,00</h4>
+                        </li>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <li>
+                            <h4>R$ 9,00</h4>
+                        </li>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <li>
+                            <h4>R$ 6,00</h4>
+                        </li>
+                    </div>
+                </div>
+                </ul>
+
+                <h2 id="salgados">Salgados</h2>
+                <br>
+                <br>
+
+                <div class="container-salgados">
+                    <div class="salgados">
+
+
+                        <ul class="lista-salgados">
+                            <li>
+
+                                <h4>Pão de Queijo</h4>
+                            </li>
+
+                            <li>
+                                <p>Tradicional</p>
+                            </li>
+
+                            <br>
+                            <li>
+                                <h4>Pão de Queijo Reheado</h4>
+                            </li>
+                            <li>
+                                <p>Queijo Minas / Cheddar
+                                </p>
+                            </li>
+
+                            <li>
+                                <h4>Empada</h4>
+                            </li>
+                            <li>
+                                <p>Recheio de<br>
+                                    Frango / Palmito</p>
+                            </li>
+                            <br>
+                            <li>
+                                <h4>Empada Especial</h4>
+                            </li>
+                            <li>
+                                <p>Recheio de <br>
+                                    Camarão / Carne de Sol </p>
+                            </li>
+                            <br>
+                            <li>
+                                <h4>Coxinha</h4>
+                            </li>
+                            <li>
+                                <p>Frango<br>
+                                    Queijo & Presunto</p>
+                            </li>
+                            <br>
+                            <li>
+                                <h4>Kibe</h4>
+                            </li>
+                            <li>
+                                <p>Kibe Frito<br>
+                                    Tradicional</p>
+                            </li>
+                            <hr>
+                    </div>
+
+                    <div class="preco-salgados">
+
+                        <li>
+                            <h4>R$ 6,00</h4>
+                        </li>
+                        <br>
+                        <br>
+                        <br>
+                        <li>
+                            <h4>R$ 8,00</h4>
+                        </li>
+                        <br>
+                        <br>
+
+
+                        <li>
+                            <h4>R$ 8,00</h4>
+                        </li>
+                        <br>
+                        <br>
+                        <br>
+                        <li>
+                            <h4>R$ 10,00</h4>
+                        </li>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <br>
+                        <li>
+                            <h4>R$ 8,00</h4>
+                        </li>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <li>
+                            <h4>R$ 8,00</h4>
+                        </li>
+                    </div>
+                </div>
+                </ul>
+
+                <h2 id="diversos">Diversos</h2>
+                <br>
+                <br>
+
+                <div class="container-diversos">
+                    <div class="diversos">
+                        <ul class="lista-diversos">
+                            <li>
+                                <br>
+                                <h4>Refrigerante Lata</h4>
+                            </li>
+                            <li>
+                                <p>Coca / Fanta / Guaraná </p>
+                            </li>
+                            <br>
+                            <li>
+                                <h4>Sucos 300mL</h4>
+                            </li>
+                            <li>
+                                <p>Laranja / Maracujá /Cajá</p>
+                            </li>
+                            <br>
+                            <li>
+                                <h4>Sucos 300mL</h4>
+                            </li>
+                            <li>
+                                <p>Goiaba / Acerola / Abacaxí</p>
+                            </li>
+                            <br>
+                            <br>
+                            <li>
+                                <h4>Sucos Jarra</h4>
+                            </li>
+                            <li>
+                                <p>Laranja / Maracujá / Cajú</p>
+                            </li>
+                            <br>
+                            <br>
+                            <li>
+                                <h4>Água Mineral Garrafa</h4>
+                            </li>
+                            <li>
+                                <p>Normal 500mL </p>
+                            </li>
+                            <br>
+                            <br>
+                            <li>
+                                <h4>Água Mineral Garrafa</h4>
+                            </li>
+                            <li>
+                                <p>Com Gás 500mL</p>
+                            </li>
+                    </div>
+
+                    <div class="preco-doces">
+
+                        <li>
+                            <br>
+                            <h4>R$ 6,00</h4>
+                        </li>
+                        <br>
+                        <br>
+                        <br>
+                        <li>
+                            <h4>R$ 8,00</h4>
+                        </li>
+                        <br>
+                        <br>
+                        <br>
+
+                        <li>
+                            <h4>R$ 8,00</h4>
+                        </li>
+                        <br>
+                        <br>
+                        <br>
+
+                        <li>
+                            <h4>R$ 15,00</h4>
+                        </li>
+                        <br>
+                        <br>
+
+                        <br>
+                        <li>
+                            <h4>R$ 7,00</h4>
+                        </li>
+                        <br>
+                        <br>
+                        <br>
+
+                        <li>
+                            <h4>R$ 8,00</h4>
+                        </li>
+                        <hr>
+                    </div>
+                </div>
+                </ul>
+
+            </div>
+    </main>
+
+    <footer>
+        <nav class="foot">
+            <a href="index.html">Home</a>
+            <a href="#topo">Topo</a>
+            <a href="#cafes">Cafés</a>
+            <a href="#doces">Doces</a>
+            <a href="#salgados">Salgados</a>
+            <a href="#diversos">Diversos</a>
+
+        </nav>
+    </footer>
+
+
+
+
+
+
+    <div class="modal">       
+        <h3 class="titulo"><span>Nosso </span>Endereço</h3>
+        <p class="adress">Av. do Café, 403 - Cafelândia, SP, 16500-000</p>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d654.8558013646392!2d-49.60936085954242!3d-21.802549686647986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be4670cc2bb213%3A0x9099b5e043ad814b!2sCafel%C3%A2ndia%20Clube!5e0!3m2!1spt-BR!2sbr!4v1751937231472!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+    <div class="mascara-modal" onclick="escondermodal()"></div>
+
+    </div>
+
+
+    <script src="./scipts.js">
+
+    </script>
+
 </body>
+
 </html>

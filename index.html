@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Cafeteria</title>
 </head>
+
 <body>
     <div class="caixa-video">
         <video src="./video/caffe.mp4" loop muted autoplay></video>
@@ -26,53 +28,56 @@
                 <a href="menu.html">Menu</a>
                 <a href="#" onclick="mostrarmodal()">Endereço</a>
                 <a href="sobre.html">Sobre</a>
-                <a href="#">Contato</a>
-                
-                
-              
+                <a href="contato.html">Contato</a>
             </nav>
-
-
         </section>
     </header>
-        <section class="caixa-principal">
-           
-            <div>
-                <h3>Venha sentir o sabor do melhor café da região.</h3>
-                <p>
-                <b>Que tal uma pausa deliciosa no seu dia? Aqui na CAFENA, o aroma irresistível do café fresco te convida a relaxar e recarregar as energias.</b></p>
-                 <a href="#" class="pegue">Pegue o Seu</a>
-              
+    <section class="caixa-principal">
+
+        <div>
+            <h3>Venha sentir o sabor do melhor café da região.</h3>
+            <p>
+                <b>Que tal uma pausa deliciosa no seu dia? Aqui na <strong>CAFENA</strong>, o aroma irresistível do café fresco te
+                    convida a relaxar e recarregar as energias.</b>
+            </p>
+            <a href="sobre.html" class="pegue">Pegue o Seu</a>
+    </div>
+    </section>
+    <section class="caixa-sobre">
+        <h2 class="titulo"> <span>Sobre</span> Nós</h2>
+        <div class="sobre-container">
+            <div class="sobre-img">
+                <img src="./img/about-img.jpg" alt="">
             </div>
-                </section>
-                <section class="caixa-sobre">
-                    <h2 class="titulo"> <span>Sobre</span> Nós</h2>
-                 <div class="sobre-container">  
-                    <div class="sobre-img">
-                        <img src="./img/about-img.jpg" alt="">
-                    </div>
-                    <div class="sobre-textos">
-                      <h3>O que faz o nosso café especial</h3>
-                      <p>Uma Experiência Única em Cada Gole!
-                        Esqueça o comum. Café especial é a arte de grãos raros, cultivados com paixão e torrados à perfeição para despertar aromas e sabores inesquecíveis. Uma jornada sensorial que te convida a apreciar cada nuance, da acidez vibrante ao corpo aveludado.
-                        
-                        Mais que uma bebida, um ritual de prazer. Descubra a magia do café especial!</p>
-                      <a class="pegue" href="#"><strong>Saiba Mais</strong></a>
-                    </div>
-                    
-                </section>
-                <div class="modal">
-                    <h3 class="titulo"><span>Nosso</span>Endereço</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.339116166672!2d-49.60607971477147!3d-21.80582462455454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be467589002709%3A0x54c03e662abc324e!2sCafel%C3%A2ndia%2C%20SP%2C%2016500-000!5e0!3m2!1spt-BR!2sbr!4v1746584818097!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
-                </div>
-                <div class="mascara-modal" onclick="escondermodal()"></div>
+            <div class="sobre-textos">
+                <h3>O que faz o nosso café especial</h3>
+                <p>Uma Experiência Única em Cada Gole!
+                    Esqueça o comum. Café especial é a arte de grãos raros, cultivados com paixão e torrados à perfeição
+                    para despertar aromas e sabores inesquecíveis. Uma jornada sensorial que te convida a apreciar cada
+                    nuance, da acidez vibrante ao corpo aveludado.
 
-            </div> 
+                    Mais que uma bebida, um ritual de prazer. Descubra a magia do café especial!</p>
+                <a href="menu.html" class="pegue"><strong>Saiba Mais</strong></a>
+            </div>
+
+    </section>
+    <div class="modal">
+        <br>
+        <h3 class="titulo"><span>Nosso </span>Endereço</h3>
+          <p class="adress">Av. do Café, 403 - Cafelândia, SP. 16500-000
+            </p>
         
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.4177781536273!2d-49.61148942626995!3d-21.802783399347142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be4670cc2bb213%3A0x9099b5e043ad814b!2sCafel%C3%A2ndia%20Clube!5e0!3m2!1spt-BR!2sbr!4v1751937036058!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-<script src="./scipts.js">
+    </div>
+    <div class="mascara-modal" onclick="escondermodal()"></div>
+</div>
+    <script src="./scipts.js">
 
-</script>
+    </script>
 </body>
+
 </html>

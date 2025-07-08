@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #e9c6a6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+   margin: 40px 150px 0 20px;
+}
+
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 22px;
+    text-align: justify;
+    margin-left: 30px;
+    padding-top: 10px;
+}
+
+
+
+.div-texto {
+    display: flex;
+    margin-top: 90px;
+    margin-left: 20px;
+}
+
+.div-texto p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.xicara {
+    width: 80%;
+    margin-top: 50px;
+}
+
+.logo {
+    width: 60%;
+    height: 50%;
+}
+
+.side {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-left: 20px;
+}
+
+.redes {
+    display: flex;
+    gap: 40px;
+   
+    
+}
+
+.redes a {
+    text-decoration: none;
+    color: #0a0500;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.cont {
+    width: 200%;
+    display: flex;
+}
+
+.cont-2 {
+    width: 4%;
+}
+
+p a {
+    text-decoration: none;
+    color:#0a0500;
+}
+
+span {
+    font-size: 45px;
+}
