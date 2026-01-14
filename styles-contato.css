@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -9,85 +9,103 @@
 
 body {
     background-color: #e9c6a6;
+    padding: 2rem; /* Espaço nas bordas */
 }
 
+/* Header simplificado da pág contato */
 header {
     display: flex;
-    justify-content: space-between;
-   margin: 40px 150px 0 20px;
+    flex-direction: column; /* Empilha no mobile por padrão */
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
 }
 
-
 h2 {
-    font-size: 50px;
+    font-size: 4rem;
+}
+h2 span { font-size: 3rem; font-weight: normal; }
+h2 strong { color: #000; }
+
+.redes {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.redes img.cont {
+    width: 4rem;
+    height: 4rem;
+    transition: transform 0.3s;
+}
+.redes img.cont:hover { transform: scale(1.1); }
+
+/* Principal */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 h3 {
-    font-size: 22px;
-    text-align: justify;
-    margin-left: 30px;
-    padding-top: 10px;
-}
-
-
-
-.div-texto {
-    display: flex;
-    margin-top: 90px;
-    margin-left: 20px;
-}
-
-.div-texto p {
-    font-size: 18px;
-    font-weight: 500;
-    text-align: justify;
-}
-
-.xicara {
-    width: 80%;
-    margin-top: 50px;
-}
-
-.logo {
-    width: 60%;
-    height: 50%;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 4rem;
 }
 
 .side {
     display: flex;
+    flex-wrap: wrap; /* Importante: permite que a imagem vá para baixo do texto no mobile */
+    align-items: center;
     justify-content: space-between;
-    gap: 100px;
-    margin-left: 20px;
+    gap: 4rem;
 }
 
-.redes {
-    display: flex;
-    gap: 40px;
-   
-    
+.div-texto {
+    flex: 1 1 400px; /* Texto ocupa espaço mas encolhe se precisar */
 }
 
-.redes a {
+.div-texto p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Links no texto */
+.div-texto a {
     text-decoration: none;
-    color: #0a0500;
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.cont {
-    width: 200%;
-    display: flex;
+    color: #000;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .cont-2 {
-    width: 4%;
+    width: 2.5rem;
 }
 
-p a {
-    text-decoration: none;
-    color:#0a0500;
+/* Área da imagem (Xícara) */
+.cafe {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
 }
 
-span {
-    font-size: 45px;
+.xicara {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- MEDIA QUERY --- */
+@media (min-width: 769px) {
+    header {
+        flex-direction: row; /* Volta ao lado a lado no PC */
+        justify-content: space-between;
+        margin: 40px 10%;
+    }
+    
+    h2 { text-align: left; }
 }

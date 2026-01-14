@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    font-size: 10px;
+    font-size: 62.5%; /* Truque para facilitar rem: 1rem = 10px */
     --main-color: #e9ae76;
     --black: #131313;
     --bg: #010103;
     --border: 0.1rem solid rgba(255, 255, 255, 0.3);
     font-family: "Roboto", sans-serif;
-    
-
 }
 
 * {
@@ -16,20 +14,27 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
 }
 
-.caixa-video {
+html {
+    overflow-x: hidden; /* Evita rolagem lateral indesejada */
+}
+
+/* --- Vídeo de Fundo --- */
+.caixa-video, .caixa-video1 {
     position: fixed;
     z-index: -1;
     width: 100%;
     height: 100%;
+    top: 0; left: 0;
 }
 
-.caixa-video video {
-    min-height: 100%;
-    min-width: 100%;
-    position: fixed;
-    top: 0;
+.caixa-video video, .caixa-video1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que o vídeo cubra a tela sem distorcer */
 }
 
 .mascara {
@@ -37,76 +42,76 @@
     width: 100%;
     position: fixed;
     top: 0;
-
+    background: rgba(0,0,0,0.3); /* Escurece levemente o vídeo */
 }
 
+/* --- Cabeçalho --- */
 header {
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
     background-color: var(--bg);
     border-bottom: var(--border);
-    width: 100vw;
-}
-
-section {
-    padding: 3rem 2rem;
-    margin: 0 auto;
-    max-width: 1200px;
+    padding: 1.5rem 7%; /* Espaçamento lateral responsivo */
 }
 
 header section {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 50px;
-    padding: 1.5rem 0;
-    position: relative;
-
+    justify-content: space-between; /* Separa logo do menu */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
 }
 
-
 header section a img {
-    height: 10rem;
+    height: 8rem; /* Reduzi um pouco para caber melhor */
 }
 
 header section nav a {
     margin: 0 1rem;
     font-size: 1.8rem;
-    text-decoration: none;
     color: #fff;
     transition: 0.4s linear;
 }
 
 header section nav a:hover {
     color: var(--main-color);
-    border: 0.1rem solid var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
     padding-bottom: 0.5rem;
 }
 
-
+/* --- Home (Caixa Principal) --- */
 .caixa-principal {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    /* ADICIONE ISTO: */
+    position: relative;
+    z-index: 1;
+}
+
+.caixa-sobre {
+    /* ...outras propriedades... */
+    /* ADICIONE ISTO: */
+    position: relative;
+    z-index: 1;
 }
 
 .caixa-principal div {
     max-width: 60rem;
-    margin-top: 150px;
+    margin-top: 10rem;
 }
 
-.caixa-principal div h3 {
+.caixa-principal h3 {
     color: #fff;
     font-size: 6rem;
     text-transform: uppercase;
-
 }
 
-.caixa-principal div p {
+.caixa-principal p {
     font-size: 2rem;
-    color: #ffff;
+    color: #fff;
     font-weight: lighter;
     padding: 1rem 0;
     line-height: 1.8;
@@ -118,18 +123,20 @@ header section nav a:hover {
     cursor: pointer;
     margin-top: 2rem;
     font-size: 1.8rem;
-    color: #ffff;
+    color: #fff;
     padding: 1rem 3rem;
-    text-decoration: none;
-    border: none;
-    transition: 0.3s linear;
     border-radius: 10px;
-    
+    transition: 0.3s linear;
 }
 
-.Pegue:hover {
+.pegue:hover {
     letter-spacing: 0.1rem;
+}
 
+/* --- Seção Sobre --- */
+.caixa-sobre {
+    padding: 5rem 7%;
+    background-color: rgba(0,0,0,0.8); /* Fundo para leitura */
 }
 
 .titulo {
@@ -144,115 +151,135 @@ header section nav a:hover {
     color: var(--main-color);
 }
 
-.caixa-sobre .sobre-container {
+.sobre-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: var(--black);
-    gap: 1.5rem;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permite quebre de linha */
+    gap: 2rem;
 }
 
-.caixa-sobre .sobre-container .sobre-img {
-    flex: 1 1 45rem;
+.sobre-img {
+    flex: 1 1 40rem;
 }
 
-.caixa-sobre .sobre-container .sobre-img img {
+.sobre-img img {
     width: 100%;
 }
 
-.caixa-sobre .sobre-container .sobre-textos {
-    flex: 1 1 45rem;
-    padding: 1rem;
+.sobre-textos {
+    flex: 1 1 40rem;
+    padding: 2rem;
 }
 
-.caixa-sobre .sobre-container .sobre-textos h3 {
+.sobre-textos h3 {
     font-size: 3rem;
     color: #fff;
-
-
+    margin-bottom: 1rem;
 }
 
-
-.caixa-sobre .sobre-container .sobre-textos p {
-    font-size: 1.5rem;
+.sobre-textos p {
+    font-size: 1.6rem;
     font-weight: lighter;
     color: #fff;
     line-height: 1.8;
-    padding: 0rem 0;
-
 }
 
+/* --- Modal --- */
 .modal {
     display: flex;
     flex-direction: column;
-    background-color: transparent;
     gap: 20px;
-    z-index: 4;
+    z-index: 2000;
     position: fixed;
-    top: 0%;
-    left: -45%;
-    transform: translate(-50% -50%);
-    transition: left 1s linear;
+    top: 50%; /* Centraliza verticalmente */
+    left: -200%; /* Escondido inicialmente */
+    transform: translate(-50%, -50%); /* Centraliza exato */
+    transition: left 0.5s ease;
+    background: #000;
+    padding: 20px;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    width: 90%; /* Responsivo no mobile */
+    max-width: 600px; /* Limite no desktop */
+}
+
+.modal iframe {
+    width: 100%; /* Mapa responsivo */
+    height: 300px;
 }
 
 .mascara-modal {
     visibility: hidden;
-    z-index: 3;
+    z-index: 1500;
     position: fixed;
     inset: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
-}
-
-.menu {
-    color: blue;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .adress {
     color: aliceblue;
-    font-size: 16px;
+    font-size: 1.6rem;
+    text-align: center;
 }
 
-
-/*Página Sobre*/
-
-.caixa-video1 {
-    position: fixed;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-}
-
-.caixa-video1 video {
-    min-height: 100%;
-    min-width: 100%;
-    position: fixed;
-    top: 0;
-}
-
+/* --- Página Sobre (Específico) --- */
 .txt {
-    min-height: 100vh;
+    min-height: 60vh;
     display: flex;
-    align-items: center;
-}
-
-.txt p {
-    font-size: 30px;
-    color: #000000;
-    font-weight: 700;
-    padding: 1rem 0;
-    line-height: 1.8;
-    margin-left: 20px;
-}
-
-.texto-sobre {
-    margin-top: 40px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 7%;
 }
 
 .tradicional {
-    font-size: 50px;
-    color: #0b0808;
-    margin-top: 200px;
-    margin-left: 30px;
+    font-size: 4rem;
+    color: #fff; /* Mudei para branco para ler melhor no video */
+    margin-top: 15rem; /* Compensar menu fixo */
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+.texto-sobre {
+    font-size: 2rem;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.8); /* Fundo claro para ler texto preto */
+    color: #000;
+    padding: 2rem;
+    border-radius: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* --- MEDIA QUERIES (RESPONSIVIDADE) --- */
+@media (max-width: 768px) {
+    html {
+        font-size: 55%; /* Diminui a fonte geral */
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    header section {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .caixa-principal h3 {
+        font-size: 4rem;
+    }
+    
+    .caixa-principal p {
+        font-size: 1.6rem;
+    }
+
+    .tradicional {
+        margin-top: 22rem; /* Mais espaço pois o menu ficou vertical */
+        font-size: 3rem;
+    }
 }
